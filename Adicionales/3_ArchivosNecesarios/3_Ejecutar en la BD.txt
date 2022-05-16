@@ -1,0 +1,12 @@
+INSERT INTO public.rol(
+	id_rol, descripcion, nombre)
+	VALUES (1, 'Administrador', 'ADMIN');
+	
+INSERT INTO public.usuario(
+	id_usuario, estado, clave, nombre)
+	VALUES (1, true, '$2a$10$ju20i95JTDkRa7Sua63JWOChSBc0MNFtG/6Sps2ahFFqN.HCCUMW.', 'prueba@gmail.com');
+	
+	
+INSERT INTO public.usuario_rol(
+	id_usuario, id_rol)
+	VALUES (1, 1);

@@ -1,0 +1,29 @@
+CREATE TABLE IF NOT EXISTS public.oauth_access_token
+(
+    token_id character varying(256) COLLATE pg_catalog."default",
+    token bytea,
+    authentication_id character varying(256) COLLATE pg_catalog."default",
+    user_name character varying(256) COLLATE pg_catalog."default",
+    client_id character varying(256) COLLATE pg_catalog."default",
+    authentication bytea,
+    refresh_token character varying(256) COLLATE pg_catalog."default"
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public.oauth_access_token
+    OWNER to postgres;
+
+--------------------------------------------------------------------------------------
+
+CREATE TABLE IF NOT EXISTS public.oauth_refresh_token
+(
+    token_id character varying(256) COLLATE pg_catalog."default",
+    token bytea,
+    authentication bytea
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public.oauth_refresh_token
+    OWNER to postgres;

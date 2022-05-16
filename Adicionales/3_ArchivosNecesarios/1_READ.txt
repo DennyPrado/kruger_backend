@@ -1,0 +1,10 @@
+En el archivo "APPLICATION.PROPERTIES"
+Se debera agregar:
+1) La Clave de la BD que se usara en la linea:
+spring.datasource.password=
+
+2) El usuario que se utilizara para realizar la peticion del token, en la linea:
+security.jwt.client-id=
+
+3) La Clave que se utilizara para realizar la peticion del token, en la linea:
+security.jwt.client-secret=
